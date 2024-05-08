@@ -144,7 +144,7 @@ function App() {
       <div style={{ display: 'flex' }}>
         <div ref={log} id="progress"></div>
         <div style={{ position: 'relative' }} className="container">
-          <img ref={img} src={src} alt="ocr" style={{ transformOrigin: 'left top' }} />
+          {src && <img ref={img} src={src} alt="ocr" style={{ transformOrigin: 'left top' }} />}
           <svg ref={svg} className="bboxes" style={{ position: 'absolute', transformOrigin: 'left top', left: 0 }} ></svg>
         </div>
       </div>
