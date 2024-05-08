@@ -1,18 +1,18 @@
-const { UNAUTHORIZED, FORBIDDEN, BAD_REQUEST, INTERNAL } = require("../utils/consts")
+const { statuses } = require("../utils/consts")
 
 module.exports = function (resp, status, message) {
     let statusCode;
     switch (status) {
-        case UNAUTHORIZED:
+        case statuses.UNAUTHORIZED:
             statusCode = 401;
             break;
-        case FORBIDDEN:
+        case statuses.FORBIDDEN:
             statusCode = 403;
             break;
-        case BAD_REQUEST:
+        case statuses.BAD_REQUEST:
             statusCode = 404;
             break;
-        case INTERNAL:
+        case statuses.INTERNAL:
         default:
             statusCode = 500;
             break;

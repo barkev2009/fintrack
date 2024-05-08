@@ -1,6 +1,8 @@
 module.exports = {
-    FORBIDDEN: 'FORBIDDEN',
-    UNAUTHORIZED: 'UNAUTHORIZED',
-    BAD_REQUEST: 'BAD_REQUEST',
-    INTERNAL: 'INTERNAL' 
+    statuses: {
+        FORBIDDEN: 'FORBIDDEN',
+        UNAUTHORIZED: 'UNAUTHORIZED',
+        BAD_REQUEST: 'BAD_REQUEST',
+        INTERNAL: 'INTERNAL'
+    }
 }
